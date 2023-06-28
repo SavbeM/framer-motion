@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import {Home} from "./pages/Home";
+
+const AppStyles = {
+  wrapper: "bg-mainRed w-full h-full overflow-hidden px-5 py-8 tablet:px-12 py-20 laptop:px-28 py-28 "
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className={AppStyles.wrapper}>
+          <Home/>
+      </div>
   );
 }
 
